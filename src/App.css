@@ -1,38 +1,400 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.header{
+  height: 12vh;
+  background-color: rgba(0,0,0);
   display: flex;
-  flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  position: sticky;
+  top: 0;
+  width: 100%;
+  padding-left: 1rem;
+  z-index: 99999;
+}
+.header img{
+  cursor: pointer;
+  padding: 10px;
+  width: auto;
+  height: 100%;
+
+}
+.App{
+  height: 100vh;
+}
+.maindiv{height: 100%;}
+.imagebackground{
+  background-image: url('./assets/images/backgroundimage.jpg');
+  background-size: cover;
+  background-color: #f2f2f2;
+  background-position: center center;
+  min-height: 90%;
+    max-height: 999px;
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+}
+.testimonialrow{
+  padding: 10px;
+}
+.testimonialrow .ant-typography{font-family: cursive;font-size: 1.35em;
+  line-height: 1.4em;color:#fff;font-weight: 300;
+margin-bottom: 1rem;
+font-style: italic;
+}
+.locationbox{
+  border-radius: 12px;
+    box-shadow: 0 6px 10px -4px rgb(0 0 0 / 15%);
+    background-color: #fff;
+    color: #222;
+    margin-bottom: 20px;
+    position: relative;
+    z-index: 1;
+    border: 1px solid #dfdfdf;
+    transition: transform .3s cubic-bezier(.34,2,.6,1),box-shadow .2s ease;
+}
+.locationbox .ant-typography{
+  font-family: Montserrat,Helvetica,Arial,sans-serif;font-size: 1.35em;
+  line-height: 1.4em;font-weight: 700;
+
+}
+.subdiv{
+  padding:2rem;
+  padding-top: 0;
+}
+.subdiv .ant-typography{
+  font-size: 14px;
+  font-weight: 600;
+}
+.subdiv .ant-input-affix-wrapper-lg{
+  border-radius: 10px;
+  margin-top: 10px;
+}
+.ant-input{
+  border-radius: 10px;
+  margin-top: 10px;
+}
+.headertext{
+  width: 100%;
+  text-align: center;
+  margin-top: 30px;
+}
+.headertext .ant-typography{
+  font-size: 3.6rem;
+  font-family: Montserrat,;
+  font-weight: 300;
+  line-height: 1.1;
+  color: #222;
+}
+.sectiondiv{
+  text-align: center;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+.sectiondiv i{
+  font-size: 4rem;
+  color: red;
+}
+.section{
+  margin-top: 4rem;
+  padding-bottom: 5rem;
+  padding-left: 5rem;
+  padding-right: 5rem;
+}
+.firsttext{
+  margin-top: 15px;
+  margin-bottom: 15px;
+  color: #222;
+  font-size: 1.6em;
+    line-height: 1.2em;   
+     font-weight: 300;
+}
+.secondtext{
+  color: #9a9a9a;
+  font-size: 15px;
+    line-height: 1.5em;
+    margin-bottom: 5px;
+    font-family: Montserrat,Helvetica,Arial,sans-serif;
+    font-weight: 300;
+
+}
+.secondsection ,.whydiv{
+  padding-left: 5rem;
+  padding-right: 5rem;
+  text-align: center;
+  padding-bottom: 4rem;
+  background: #fbfbfb;
 }
 
-.App-link {
-  color: #61dafb;
+.secondsection .ant-col{
+  padding-left: 20px;
+  padding-right: 20px;
+}
+.secondsection img{
+  border-radius: 12px;
+    transition: opacity .5s ease 0s;
+    width: 100%;
+}
+.secondsectiontext{
+  color: #222;
+  font-size: 15px;
+  font-family: Montserrat,;
+    font-weight: 300;
+    padding-top: 2rem;
+}
+.whyparagraph{
+  color: #9a9a9a;
+  margin-top: 5rem;
+  font-size: 15px;
+    line-height: 1.5em;
+    margin-bottom: 5px;
+    font-family: Montserrat,;
+    font-weight: 300;
+    text-align: left;
+}
+.mapimagebackground{
+  background-image: url('./assets/images/cabbazar-map.png');
+  background-size: cover;
+  background-color: #f2f2f2;
+  background-position: center center;
+  min-height: 90%;
+    max-height: 999px;
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    background-color: rgba(0,0,0,.5);
+}
+.inquirytext{
+text-align: center;
+color: #000;
+font-family: Montserrat,;
+font-size: 3rem;
+    line-height: 1.4;
+    margin: 20px;
+    font-weight: 300;
+}
+.footerdiv{
+  width: 100%;
+   height: 100%; 
+   align-items: baseline;
+   
+}
+.footerdiv .ant-typography:hover{
+  text-decoration: underline;
+  cursor: pointer;
+}
+.footerdiv .ant-typography{
+  font-size: 18px;
+  color: #fff;
+  margin-bottom: 20px;
+  font-family: 'Open Sans';
+  font-weight: 600;
+}
+.ant-picker{
+  border-radius: 10px !important;
+    width: 100% !important;
+    padding: 6.5px 11px !important;
+    font-size: 16px !important;
+    margin-top: 10px  !important;
+}
+.contactus .ant-input{
+  border-radius: 10px !important;
+  width: 100% !important;
+  padding: 6.5px 11px !important;
+  font-size: 16px !important;
+
+}
+.backbutton .ant-typography{
+  font-size: 1.5rem;
+  line-height: 1.5em;
+  text-transform: uppercase;
+  cursor: pointer;
+  font-family: Montserrat,;
+  font-weight: 600;
+  color: red;
+}
+.locationrow{
+  background-color: #e5ae43;
+  padding: 6px 25px;
+  border-radius: 15px;
+}
+.locationrow:hover{
+  cursor: pointer;
+  background-color: #000;
+}
+.locationrow .ant-typography{
+  font-size: 1rem;
+  font-weight: 700;
+  color: #fff;
+}
+.triptext .ant-typography{
+  font-size: 1.5rem;
+  line-height: 1.5em;
+  cursor: pointer;
+  font-family: Montserrat,;
+  font-weight: 600;
+  color: #66615b;
+  margin-top: 1rem;
+}
+.tripdiv{
+  padding: 10px 30px;
+  margin-top: 1rem;
+  box-shadow: 0 6px 10px -4px rgb(0 0 0 / 15%);
+  border-radius: 12px;
+  transition: transform .3s cubic-bezier(.34,2,.6,1),box-shadow .2s ease;
+}
+.carcard{
+  border-radius: 12px;
+  box-shadow: 0 5px 5px #dfdfdf;
+  transition: transform .3s cubic-bezier(.34,2,.6,1),box-shadow .2s ease;
+  text-align: center;
+  padding:10px;
+  margin: 1rem 20px;
+  position: relative;
+  cursor: pointer;
+}
+.carcard:hover{
+top: -10px;
+}
+.actualrate{
+  text-decoration: line-through;
+  color: #f5593d;
+  font-weight: 700;
+}
+.actualrate .ant-typography{
+  font-size: 16px;
+  font-weight: 700;
+  color: #f5593d;
+}
+.discountrate .ant-typography{
+  color: #01c501;
+  font-weight: 700;
+  font-size: 2rem;
+}
+.cartext .ant-typography{
+  margin-bottom: 10px;
+  color: #51bcda;
+  font-weight:700;
+  text-transform: uppercase;
+}
+.cardesc .ant-typography{
+font-size: 1.5rem;
+line-height: 1.4em;
+}
+.columntext .ant-typography{
+  color: #66615b;
+  font-weight: 700;
+  font-size: 1rem;
+  text-align: initial;
+}
+.columntext2 .ant-typography{
+  color: #01c501;
+  font-weight: 700;
+  font-size: 1rem;
+  /* text-align: initial; */
+}
+.ant-modal-body
+{
+  padding: 3px 24px !important;
+}
+/* payment css */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:weight@100;200;300;400;500;600;700;800&display=swap");
+
+body {
+    background-color: #f5eee7;
+    font-family: "Poppins", sans-serif;
+    font-weight: 300
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.container {
+    height: 100vh
+}
+
+.card {
+    border: none
+}
+
+.card-header {
+    padding: .5rem 1rem;
+    margin-bottom: 0;
+    background-color: rgba(0, 0, 0, .03);
+    border-bottom: none
+}
+
+.btn-light:focus {
+    color: #212529;
+    background-color: #e2e6ea;
+    border-color: #dae0e5;
+    box-shadow: 0 0 0 0.2rem rgba(216, 217, 219, .5)
+}
+
+.form-control {
+    height: 50px;
+    border: 2px solid #eee;
+    border-radius: 6px;
+    font-size: 14px
+}
+
+.form-control:focus {
+    color: #495057;
+    background-color: #fff;
+    border-color: #039be5;
+    outline: 0;
+    box-shadow: none
+}
+
+.input {
+    position: relative
+}
+
+.input i {
+    position: absolute;
+    top: 16px;
+    left: 11px;
+    color: #989898
+}
+
+.input input {
+    text-indent: 25px
+}
+
+.card-text {
+    font-size: 13px;
+    margin-left: 6px
+}
+
+.certificate-text {
+    font-size: 12px
+}
+
+.billing {
+    font-size: 11px
+}
+
+.super-price {
+    top: 0px;
+    font-size: 22px
+}
+
+.super-month {
+    font-size: 11px
+}
+
+.line {
+    color: #bfbdbd
+}
+
+.free-button {
+    background: #1565c0;
+    height: 52px;
+    font-size: 15px;
+    border-radius: 8px
+}
+
+.payment-card-body {
+    flex: 1 1 auto;
+    padding: 24px 1rem !important
 }
