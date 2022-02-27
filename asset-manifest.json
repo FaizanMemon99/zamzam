@@ -1,0 +1,29 @@
+{
+  "files": {
+    "main.css": "/zamzam/static/css/main.fcce2937.css",
+    "main.js": "/zamzam/static/js/main.00093589.js",
+    "static/js/787.99b05aad.chunk.js": "/zamzam/static/js/787.99b05aad.chunk.js",
+    "static/media/ooty.png": "/zamzam/static/media/ooty.a669563fc5b0a9950ae0.png",
+    "static/media/shirdi.png": "/zamzam/static/media/shirdi.67c0a97a725b70665678.png",
+    "static/media/haridwar.png": "/zamzam/static/media/haridwar.69dba5cddac9281f38fb.png",
+    "static/media/cabbazar-map.png": "/zamzam/static/media/cabbazar-map.773f591f4a4afded0545.png",
+    "static/media/delhi-manali.jpg": "/zamzam/static/media/delhi-manali.7fc09148f36db5cff25b.jpg",
+    "static/media/car1.png": "/zamzam/static/media/car1.d23631a2de36df24e231.png",
+    "static/media/car4.png": "/zamzam/static/media/car4.1f8f95ab7923ce5dda6a.png",
+    "static/media/car2.png": "/zamzam/static/media/car2.1120637a1fda99340dea.png",
+    "static/media/car3.png": "/zamzam/static/media/car3.4eb640c12ace04457f3a.png",
+    "static/media/backgroundimage.jpg": "/zamzam/static/media/backgroundimage.aeacc61c290dba7cf95c.jpg",
+    "static/media/covid_banner_web.png": "/zamzam/static/media/covid_banner_web.51786fad9f8c63e0962f.png",
+    "static/media/default-monochrome-white.svg": "/zamzam/static/media/default-monochrome-white.a1db4363dfd669c6342fea4ec476ba20.svg",
+    "static/media/sedan.png": "/zamzam/static/media/sedan.a900a2a6370c6f614f13.png",
+    "static/media/suv.png": "/zamzam/static/media/suv.5df699f75a7ccabdab01.png",
+    "index.html": "/zamzam/index.html",
+    "main.fcce2937.css.map": "/zamzam/static/css/main.fcce2937.css.map",
+    "main.00093589.js.map": "/zamzam/static/js/main.00093589.js.map",
+    "787.99b05aad.chunk.js.map": "/zamzam/static/js/787.99b05aad.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.fcce2937.css",
+    "static/js/main.00093589.js"
+  ]
+}
